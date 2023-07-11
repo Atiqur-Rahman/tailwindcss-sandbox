@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
-  </head>
-  <body>
-    <!-- Positioning -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>TailwindCSS</title>
+    </head>
+    <body>
+        <!-- Positioning -->
+        <div class="relative w-1/2 h-12 bg-red-200">
+            <p>Parent Element</p>
+            <div class="absolute bottom-0 right-0 bg-red-500">
+                <p>Absolute Child</p>
+            </div>
+        </div>
+        <!-- Top left corner -->
+        <div class="relative h-32 w-32 bg-yellow-100">
+            <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300"></div>
+        </div>
+        <!-- Top right corner -->
+        <div class="relative h-32 w-32 bg-yellow-100">
+            <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300"></div>
+        </div>
+        <!-- Bottom left corner -->
+        <div class="relative h-32 w-32 bg-yellow-100">
+            <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+        </div>
+        <!-- Bottom right corner -->
+        <div class="relative h-32 w-32 bg-yellow-100">
+            <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+        </div>
+        <!-- Span top edge -->
+        <div class="relative h-32 w-32 bg-yellow-100">
+            <div class="absolute inset-x-0 top-0 h-16 bg-yellow-300"></div>
+        </div>
 
-    <!-- Top left corner -->
+        <!-- Span left edge -->
+        <div class="relative h-32 w-32 bg-yellow-100">
+            <div class="absolute inset-y-0 left-0 w-16 bg-yellow-300"></div>
+        </div>
 
-    <!-- Top right corner -->
+        <!-- Span right edge -->
+        <div class="relative h-32 w-32 bg-yellow-100">
+            <div class="absolute inset-y-0 right-0 w-16 bg-yellow-300"></div>
+        </div>
+        <!-- Span bottom edge -->
+        <div class="relative h-32 w-32 bg-yellow-100">
+            <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300"></div>
+        </div>
+        <!-- Display Classes -->
+        <div>Lorem ipsum dolor <span class="inline font-extrabold">This is inline</span> sit amet consectetur <span class="inline-block font-extrabold">This is inline-block</span> Id ea delectus error? Harum molestias labore voluptas quam in accusamus dolorum repellendus <span class="block font-extrabold">This is block</span> eaque eum adipisci magnam modi, quaerat atque nostrum, necessitatibus corrupti temporibus non beatae. Voluptatum iusto <span class="hidden font-extrabold">This is hidden</span> vel rerum neque eius?</div>
 
-    <!-- Bottom left corner -->
+        <!-- Z-Index -->
+        <div class="relative h-36">
+            <div class="absolute left-0 w-24 h-24 bg-blue-300 z-10">1</div>
+            <div class="absolute left-20 w-24 h-24 bg-blue-400">2</div>
+            <div class="absolute left-40 w-24 h-24 bg-blue-500 z-10">3</div>
+            <div class="absolute left-60 w-24 h-24 bg-blue-600 z-20">4</div>
+            <div class="absolute left-80 w-24 h-24 bg-blue-700 z-40">5</div>
+        </div>
 
-    <!-- Bottom right corner -->
-
-    <!-- Span top edge -->
-
-    <!-- Span left edge -->
-
-    <!-- Span right edge -->
-
-    <!-- Span bottom edge -->
-
-    <!-- Display Classes -->
-
-    <!-- Z-Index -->
-
-    <!-- Floats -->
-  </body>
+        <!-- Floats -->
+        <div class="w-1/2">
+            <img class="h-40 w-40 float-left m-4" src="../assets/img/img1.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, neque dolore ea, nesciunt consectetur cupiditate, magni libero voluptatibus totam quis quibusdam debitis porro obcaecati accusamus odit laudantium eveniet officia nemo illo hic repudiandae vitae asperiores. Delectus quaerat libero harum tempora?</p>
+        </div>
+    </body>
 </html>
 
 <!-- Position Classes
