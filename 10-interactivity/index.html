@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Interactivity</title>
-  </head>
-  <body>
-    <!-- Hover State Styling -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Interactivity</title>
+    </head>
+    <body>
+        <!-- Hover State Styling -->
+        <button class="bg-black text-white py-3 px-5 rounded-lg m-3 hover:bg-orange-500 hover:text-white">Submit</button>
 
-    <!-- Focus State Styling -->
+        <!-- Focus State Styling -->
+        <button class="bg-black text-white py-3 px-5 rounded-lg m-3 focus:bg-orange-500 focus:text-white">Submit</button>
 
-    <!-- Active State Styling -->
+        <!-- Active State Styling -->
+        <button class="bg-black text-white py-3 px-5 rounded-lg m-3 active:bg-orange-500 active:text-white">Submit</button>
+        <!-- Styling based on parent state -->
+        <a href="" class="group block max-w-sm mx-auto rounded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-500">
+            <h3 class="group-hover:text-white">Card title</h3>
+            <p class="group-hover:text-white">This is the card text</p>
+        </a>
+        <!-- Pseudo Classes -->
+        <ul>
+            <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">item 1</li>
+            <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">item 2</li>
+            <li class="first:bg-red-200 only:even:bg-green-500 odd:bg-orange-500">item 3</li>
+            <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">item 4</li>
+            <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">item 5</li>
+            <li class="first:bg-red-200 even:bg-green-500 odd:bg-orange-500">item 6</li>
+        </ul>
 
-    <!-- Styling based on parent state -->
+        <!-- Appearance -->
+        <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+        <select class="appearance-none">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br />
 
-    <!-- Pseudo Classes -->
+        <!-- Cursor -->
+        <button class="bg-black text-white py-3 px-5 rounded-lg m-3 cursor-not-allowed">Submit</button>
+        <button class="bg-black text-white py-3 px-5 rounded-lg m-3 cursor-wait">Submit</button>
+        <button class="bg-black text-white py-3 px-5 rounded-lg m-3 cursor-move">Submit</button>
+        <!-- Resize -->
 
-    <!-- Appearance -->
-    <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+        <!-- User Select -->
+        <div class="select-none">Lorem ipsum dolor sit amet.</div>
+        <div class="select-text">Lorem ipsum dolor sit amet.</div>
+        <div class="select-all">Lorem ipsum dolor sit amet.</div>
+        <div class="select-auto">Lorem ipsum dolor sit amet.</div>
 
-    <!-- Cursor -->
-
-    <!-- Resize -->
-
-    <!-- User Select -->
-
-    <!-- Smooth Scroll Example -->
-  </body>
+        <a href="#item" class="block my-6">Go to Item</a>
+        <!-- Smooth Scroll Example -->
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque tempora et, repudiandae hic, nisi iste recusandae deleniti minus facere quasi magnam pariatur quo animi enim fuga mollitia reprehenderit voluptatum! Optio voluptatum, dolor numquam nihil cum iusto? Nihil fuga placeat quae inventore rem facere eos, ullam labore quam fugiat temporibus commodi. Fugit explicabo voluptatem quo nam aperiam deleniti saepe placeat error sunt, quibusdam qui expedita odio similique, recusandae cum labore! Explicabo sit unde magni iure, minus optio et corporis in nesciunt deserunt delectus nisi a accusantium vero quaerat consequatur asperiores esse, fugiat odio alias velit inventore commodi voluptate. Quam sed inventore a illo non unde veniam dolorum! Consequuntur nostrum accusamus exercitationem explicabo. In, quas, reprehenderit temporibus atque illum totam aperiam eum architecto commodi dolores adipisci ut accusamus fugiat ipsum eaque quia. Id corporis corrupti pariatur dignissimos
+            beatae sed sint, alias laudantium iusto quae ab fuga nisi quidem asperiores? Accusamus temporibus laudantium, ullam necessitatibus iste perspiciatis odit amet error beatae quia sapiente, est quod similique quibusdam voluptates labore doloribus tempore possimus! Doloribus nostrum et voluptatibus beatae fuga, consequuntur minima laudantium itaque pariatur optio aspernatur recusandae tenetur esse soluta! Deserunt illo suscipit facere mollitia eum consectetur corrupti aperiam esse eligendi. Aliquid aperiam ex omnis autem sit at facilis officiis, veritatis quia molestiae eaque rerum cupiditate est nobis dignissimos dolor? Qui consequatur, vero voluptas velit excepturi perspiciatis, esse reprehenderit repellat eveniet fugit, suscipit iusto facilis nihil maxime consectetur dolor explicabo culpa! Doloribus alias iusto provident sed facere nam beatae. Dolor possimus quos illum adipisci, alias voluptatum fugiat quia suscipit aperiam atque ipsum sed facere totam quaerat earum. Eum
+            expedita ducimus totam blanditiis. Explicabo odit, rerum dolorem harum facere aspernatur alias molestias? Voluptatem unde error voluptatum mollitia recusandae ducimus pariatur ipsam dolorem illum ratione! Sit molestiae cum, harum deserunt quidem sint? Sunt ea sit, sapiente voluptatum, blanditiis minus cumque repellendus ab nobis, earum consequuntur enim numquam a tempora explicabo ut quasi quo at! Omnis unde, molestias maiores natus pariatur aliquid veritatis reprehenderit tenetur libero. Dicta, tempore dolor, aliquam non expedita reprehenderit repellat quaerat maxime facere nobis vel, culpa illo tenetur earum error! Ipsam, debitis ex. Quam, excepturi est eos iure inventore saepe soluta tenetur unde rem nulla dicta impedit nisi cupiditate cum atque ratione ullam natus repellendus quos incidunt pariatur vitae voluptate ab. Animi quisquam veniam soluta! Facere aspernatur maxime nesciunt, quidem fugiat magnam corrupti dolor eaque doloribus repellat illo temporibus tempora
+            delectus quas nulla.
+        </p>
+        <div id="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, esse, aliquid magnam unde reiciendis laboriosam dolorum iusto porro numquam, repellat aperiam possimus cum saepe blanditiis aut eveniet molestiae corrupti asperiores neque dolorem quod? Illo, quibusdam vero et similique magni sit perspiciatis facilis doloremque suscipit incidunt corrupti atque nostrum distinctio consequatur.</div>
+    </body>
 </html>
 
 <!-- Cursor
